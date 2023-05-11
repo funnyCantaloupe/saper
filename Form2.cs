@@ -221,6 +221,7 @@ namespace saper
 
             if (IsBomb(board, row, col))
             {
+                timer.Stop();
                 MessageBox.Show("Bomba. Przegrałeś!");
                 this.Hide();
                 return;
